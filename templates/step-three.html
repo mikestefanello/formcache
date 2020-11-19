@@ -1,0 +1,17 @@
+{{ define "content" }}
+<form id="step-form" method="POST">
+  <fieldset>
+    <div class="form-group">
+      <label>Code</label>
+      <div>{{.Content.Code}}</div>
+    </div>
+    <div class="form-group">
+      <label>Name</label>
+      <div>{{.Content.Name}}</div>
+    </div>
+    <h3>Are you sure you want to proceed?</h3>
+    <input type="hidden" name="token" value="{{.Content.Token}}"/>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </fieldset>
+</form>
+{{ end }}

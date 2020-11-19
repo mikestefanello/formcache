@@ -1,0 +1,20 @@
+{{ define "content" }}
+<form id="step-form" method="POST">
+  <fieldset>
+    <div class="form-group">
+      <label for="barcode">Code</label>
+      <input type="text" class="form-control" id="code" name="code" autofocus>
+    </div>
+    <fieldset class="form-group">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" name="invalidate" type="checkbox">
+          Invalidate the form
+        </label>
+      </div>
+    </fieldset>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+{{ end }}
